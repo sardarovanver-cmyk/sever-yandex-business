@@ -20,3 +20,41 @@ a{color:inherit;text-decoration:none}button{font:inherit}.section-wrap{width:min
 @media(max-width:900px){.section-wrap,.site-header{width:min(100% - 40px,var(--max))}.desktop-nav{gap:15px}.hero{grid-template-columns:1fr .8fr}.hero-visual{height:350px;padding:20px}.visual-big{font-size:clamp(100px,14vw,145px)}.difference-grid,.about-layout{gap:45px}.services-grid,.pricing-grid{grid-template-columns:repeat(2,1fr)}.service-card:last-child,.price-card:last-child{grid-column:span 2}.section-heading{gap:25px}}
 @media(max-width:680px){.section-wrap,.site-header{width:calc(100% - 36px)}.site-header{height:70px}.desktop-nav{display:none;position:absolute;top:69px;left:0;right:0;background:var(--paper);border:1px solid var(--line);padding:18px;flex-direction:column;gap:0}.desktop-nav.open{display:flex}.desktop-nav a{padding:12px 4px;border-bottom:1px solid var(--line)}.desktop-nav a:last-child{border-bottom:0}.header-cta{margin-left:auto;margin-right:10px;padding:9px 10px;font-size:10px}.menu-toggle{display:flex;width:30px;height:34px;flex-direction:column;justify-content:center;gap:6px;padding:4px}.menu-toggle span{height:2px;width:22px;background:var(--ink);display:block}.hero{display:flex;flex-direction:column;align-items:stretch;padding-top:50px;padding-bottom:75px;min-height:auto;gap:34px}.hero h1{font-size:clamp(43px,10.5vw,62px);margin-top:22px}.hero-lead{font-size:16px}.hero-note{margin-top:25px;gap:7px}.hero-visual{height:315px;padding:19px}.visual-big{font-size:clamp(105px,32vw,155px)}.visual-sticker{right:15px;bottom:73px}.hero-bottom{bottom:20px;font-size:7px;gap:20px}.hero-bottom span:first-child{max-width:75%}.section-pad{padding-top:73px;padding-bottom:78px}.difference-grid,.about-layout{grid-template-columns:1fr;gap:32px}.difference h2,.section-heading h2{font-size:clamp(38px,10vw,48px)}.section-intro{margin-top:17px;font-size:15px}.section-heading{display:block;margin-bottom:28px}.section-heading>p{margin-top:17px;font-size:14px}.services-grid,.pricing-grid{grid-template-columns:1fr}.service-card,.service-card:last-child,.price-card,.price-card:last-child{grid-column:auto;min-height:275px;padding:22px}.service-card h3{margin-top:26px}.about-layout{padding-block:72px}.about-label{min-height:230px}.about-label strong{font-size:43px}.about-copy h2{font-size:39px}.about-copy p{font-size:14px}.contact-section{padding-block:65px}.contact-panel{padding:29px 22px}.contact-panel:after{right:-90px;top:-45px;font-size:220px}.contact-panel h2{font-size:clamp(38px,10vw,48px)}.contact-actions{flex-direction:column;align-items:stretch}.contact-foot{flex-direction:column;gap:7px}.footer-inner{padding-block:22px;display:grid;grid-template-columns:1fr 1fr;gap:17px}.footer-note{grid-column:span 2;grid-row:2}.back-top{margin-left:0;justify-self:end}.copyright{grid-column:span 2;padding:14px 0 0;border-left:0;border-top:1px solid var(--line)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+
+/* Readability pass: stronger typography across the whole site */
+body { font-size: 18px; line-height: 1.75; }
+.desktop-nav { font-size: 14px; }
+.header-cta, .button { font-size: 14px; }
+.hero-lead { font-size: 19px; line-height: 1.85; }
+.hero-note { font-size: 12px; }
+.section-kicker, .eyebrow { font-size: 12px; }
+.section-intro, .section-heading > p { font-size: 16px; line-height: 1.9; }
+.compare-row b { font-size: 15px; }
+.compare-row p, .comparison-note { font-size: 14px; line-height: 1.85; }
+.service-card h3 { font-size: 23px; }
+.service-card p { font-size: 15px; line-height: 1.9; }
+.service-card > a { font-size: 14px; }
+.about-copy p { font-size: 16px; line-height: 2; }
+.proof-pills span { font-size: 12px; }
+.price-card h3 { font-size: 21px; }
+.price-card > p { font-size: 15px; line-height: 1.9; }
+.price-card li { font-size: 14px; }
+.pricing-footnote { font-size: 13px; line-height: 1.9; }
+.contact-panel > p { font-size: 16px; line-height: 1.9; }
+.contact-foot, .footer-note, .copyright { font-size: 12px; }
+
+@media(max-width:680px) {
+  body { font-size: 16px; }
+  .hero-lead { font-size: 17px; line-height: 1.8; }
+  .hero-note { font-size: 11px; }
+  .section-kicker, .eyebrow { font-size: 11px; }
+  .section-intro, .section-heading > p { font-size: 15px; }
+  .compare-row b { font-size: 14px; }
+  .compare-row p, .comparison-note { font-size: 13px; }
+  .service-card h3 { font-size: 22px; }
+  .service-card p, .about-copy p, .price-card > p, .contact-panel > p { font-size: 15px; }
+  .price-card li { font-size: 13px; }
+  .pricing-footnote { font-size: 12px; }
+  .button, .header-cta { font-size: 13px; }
+}
