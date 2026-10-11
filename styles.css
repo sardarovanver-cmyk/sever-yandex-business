@@ -95,3 +95,82 @@ body { font-size: 19px !important; line-height: 1.8 !important; }
   .pricing-footnote { font-size: 13px !important; }
   .button, .header-cta { font-size: 14px !important; }
 }
+
+
+/* Navigation refresh: larger, more distinctive desktop header */
+.site-header {
+  height: 104px;
+  border-bottom: 1px solid #d0cdc0;
+}
+.desktop-nav {
+  gap: 10px;
+  align-items: center;
+  padding: 7px;
+  border: 1px solid #dedbd0;
+  border-radius: 8px;
+  background: #eeece3;
+}
+.desktop-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 45px;
+  padding: 0 18px;
+  border-radius: 5px;
+  color: #44473e;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background .18s ease, color .18s ease, transform .18s ease;
+}
+.desktop-nav a:hover {
+  background: var(--acid);
+  color: var(--ink);
+  transform: translateY(-1px);
+}
+.header-cta {
+  min-height: 52px;
+  padding: 0 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background: var(--ink);
+  color: var(--acid);
+  border-color: var(--ink);
+  font-size: 14px !important;
+}
+.header-cta:hover {
+  background: #39412e;
+  color: var(--acid);
+  border-color: #39412e;
+}
+.brand { font-size: 16px; gap: 13px; }
+.brand-mark { width: 42px; height: 42px; font-size: 22px; }
+@media(max-width:900px) {
+  .site-header { height: 90px; }
+  .desktop-nav { gap: 2px; padding: 5px; }
+  .desktop-nav a { padding: 0 10px; font-size: 13px; }
+  .header-cta { min-height: 46px; padding-inline: 13px; }
+}
+@media(max-width:680px) {
+  .site-header { height: 78px; }
+  .desktop-nav {
+    top: 77px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    border: 1px solid var(--line);
+    border-radius: 0 0 10px 10px;
+    background: var(--paper);
+    box-shadow: 0 14px 28px #20231e16;
+  }
+  .desktop-nav a {
+    width: 100%;
+    min-height: 50px;
+    padding: 0 14px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .brand { font-size: 14px; gap: 8px; }
+  .brand-mark { width: 36px; height: 36px; font-size: 19px; }
+  .header-cta { min-height: 42px; margin-right: 7px; padding: 0 10px; font-size: 12px !important; }
+}
