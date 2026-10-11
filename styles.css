@@ -174,3 +174,96 @@ body { font-size: 19px !important; line-height: 1.8 !important; }
   .brand-mark { width: 36px; height: 36px; font-size: 19px; }
   .header-cta { min-height: 42px; margin-right: 7px; padding: 0 10px; font-size: 12px !important; }
 }
+
+
+/* CTA and button system: bolder, warmer, and more tactile */
+.button {
+  min-height: 58px;
+  padding: 17px 25px;
+  gap: 8px;
+  border-radius: 7px;
+  font-size: 16px !important;
+  font-weight: 750;
+  letter-spacing: -.015em;
+  box-shadow: 0 3px 0 rgba(32,35,30,.10);
+}
+.button span { margin-left: 5px; }
+.button-primary {
+  background: var(--acid);
+  color: var(--ink);
+  border: 1px solid #b1e350;
+  box-shadow: 0 4px 0 #a2cf46;
+}
+.button-primary:hover {
+  background: #d4ff8d;
+  border-color: #b8ec61;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 #a2cf46;
+}
+.button-quiet, .button-outline {
+  background: #e7e4d9;
+  color: var(--ink);
+  border: 1px solid #c4c1b4;
+  box-shadow: 0 3px 0 #d0cdc0;
+}
+.button-quiet:hover, .button-outline:hover {
+  background: #dedbcc;
+  border-color: #aaa797;
+  color: var(--ink);
+  transform: translateY(-2px);
+}
+.header-cta {
+  min-height: 56px;
+  padding: 0 22px;
+  border-radius: 7px;
+  background: var(--acid);
+  color: var(--ink);
+  border: 1px solid #b1e350;
+  box-shadow: 0 4px 0 #a2cf46;
+  font-size: 15px !important;
+}
+.header-cta:hover {
+  background: #d4ff8d;
+  color: var(--ink);
+  border-color: #b8ec61;
+  transform: translateY(-2px);
+}
+.contact-actions .button { min-height: 60px; padding-inline: 27px; }
+.price-card .button { min-height: 56px; }
+@media(max-width:680px) {
+  .button {
+    min-height: 56px;
+    padding: 16px 20px;
+    font-size: 15px !important;
+  }
+  .contact-actions .button { min-height: 58px; padding-inline: 18px; }
+  .header-cta {
+    min-height: 43px;
+    padding: 0 12px;
+    font-size: 12px !important;
+    box-shadow: 0 3px 0 #a2cf46;
+  }
+}
+
+/* Remove the stark white feeling: use a warmer parchment palette site-wide */
+:root {
+  --paper: #e8e4d8;
+  --ink: #24271f;
+  --muted: #717268;
+  --line: #cbc8bc;
+  --acid: #c7f36d;
+  --dark: #24271f;
+  --dark-muted: #c2c3b8;
+}
+body, .site-header { background-color: var(--paper); }
+.desktop-nav { background: #dedacd; border-color: #d0ccbd; }
+.services-section { background: #ddd9cc; border-color: #d1cdbf; }
+.service-card { background: #ece8dd; border-color: #d0ccbe; }
+.service-card-dark { background: #24271f; border-color: #24271f; }
+.price-card { background: #e1ddcf; border-color: #d0ccbe; }
+.price-card-featured { background: var(--acid); border-color: #b5dc5e; }
+.contact-panel { background: #dedacd; border-color: #cfcbbe; }
+.contact-panel:after { color: #d2cebf; }
+@media(max-width:680px) {
+  .desktop-nav { background: var(--paper); border-color: var(--line); }
+}
